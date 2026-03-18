@@ -17,7 +17,7 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 import torch
 from cloudpathlib import AnyPath
-from lance.torch.data import LanceDataset
+# from lance.torch.data import LanceDataset
 from torch import nn
 from torch.utils.data import IterableDataset
 
@@ -27,8 +27,8 @@ from . import arrow
 
 LOGGER = logging.getLogger(__name__)
 
-
-class SpectrumDataset(LanceDataset):
+class SpectrumDataset():
+# class SpectrumDataset(LanceDataset):
     """Store and access a collection of mass spectra.
 
     Parse and/or add mass spectra to an index in the
